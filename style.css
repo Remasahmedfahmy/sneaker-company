@@ -1,0 +1,161 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    transition: .3s;
+}
+body{
+    font-family: sans-serif;
+}
+header{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 100px;
+}
+header h1{
+    font-size: 45px;
+    font-weight: 900;
+    position: absolute;
+    left: 16%;
+}
+header ul {
+    display: flex;
+    position: absolute;
+    left: 33%;
+    top: 7%;
+}
+header ul li{
+    color: hsl(219, 9%, 45%);
+    margin-left: 20px;
+    list-style: none;
+    font-size: 17px;
+}
+.line{
+    width: 70%;
+    height: 1px;
+    background-color: hsl(219, 9%, 45%);
+    position: absolute;
+    left: 50%;
+    right: 50%;
+    transform: translate(-50% , -50%);
+    top: 15%;
+}
+.bag{
+    position: absolute;
+    left: 76%;
+}
+.man_img{
+    margin-left: 64%;
+    width: 4%;
+}
+.main_contaner{
+    position: absolute;
+    left: 15%;
+    top: 20%;
+}
+.main_contaner .img{
+    border-radius: 30px;
+    width: 40%;
+}
+.main_contaner h5{
+    color: hsl(219, 9%, 45%);
+    position: absolute;
+    left: 55%;
+    top: 10%;
+    letter-spacing: 1px;
+    font-family: sans-serif;
+}
+.main_contaner h1{
+    font-size: 50px;
+    width: 45%;
+    position: absolute;
+    left: 55%;
+    top: 23%;
+}
+.main_contaner p{
+    color: hsl(219, 9%, 45%);
+    margin-left: 55%;
+    margin-top: -24%;
+    width: 32%;
+    padding-top: 20px;
+}
+.main_contaner h2{
+    font-weight: 900;
+    position: absolute;
+    left: 55%;
+    top: 115%;
+}
+.main_contaner h3{
+    font-weight: 600;
+    position: absolute;
+    left: 67%;
+    top: 116%;
+    background: #000;
+    color: #fff;
+    padding: 5px;
+    border-radius: 9px;
+}
+.main_contaner h4{
+    font-weight: 900;
+    position: absolute;
+    left: 55%;
+    top: 137%;
+    text-decoration: line-through;
+    color: hsl(219, 9%, 45%);
+}
+.main_contaner .fir{
+    position: absolute;
+    left: 55%;
+    top: 160%;
+    padding: 10px;
+    width: 15%;
+    font-weight: 800;
+}
+
+.main_contaner .sec{
+    background: hsl(26, 100%, 55%);
+    position: absolute;
+    left: 78%;
+    top: 160%;
+    padding: 10px;
+    width: 18%;
+    font-weight: 900;
+    border: none;
+    border-radius: 5px;
+}
+.one {
+    width: 1%;
+    position: absolute;
+    left: 57%;
+    top: 168%;
+}
+.two{
+    width: 1%;
+    position: absolute;
+    left: 67%;
+    top: 166%;
+}
+.three{
+    width: 18px;
+    position: absolute;
+    left: 80%;
+    top: 165%;
+}
+.group_imges{
+    position: absolute;
+    top: 87%;
+    left: 15%;
+}
+.group_imges img{
+    width: 6%;
+    border-radius: 31px;
+    margin-right: 34px;
+    cursor: pointer;
+}
+.group_imges img:hover{
+    transform: scale(1.1);
+}
+.cont img{
+    display: none;
+}

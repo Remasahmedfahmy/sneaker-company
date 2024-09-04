@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+    <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+    <title>Frontend Mentor | E-commerce product page</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@100..900&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <header>
+      <h1>sneakers</h1>
+      <ul>
+        <li class="collection">Collections</li>
+        <li class="men">Men</li>
+        <li class="women">Women</li>
+        <li class="about">About</li>
+        <li class="content">Contact</li>
+      </ul>
+      <img class="bag" src="icon-cart.svg" alt="">
+      <img class="man_img" src="image-avatar.png" alt="">
+    </header>
+    <div class="line"></div>
+    <div class="main_contaner">
+      <img id="img" class="img" src="image-product-1.jpg" alt="">
+      <div class="cont">
+        <img id="onee"src="image-product-1.jpg" alt="">
+        <img id="twoo"src="image-product-2.jpg" alt="">
+        <img id="threeee"src="image-product-3.jpg" alt="">
+        <img id="fourr" src="image-product-4.jpg" alt="">
+      </div>
+      <h5>Sneaker Company</h5>
+      <h1>Fall Limited Edition Sneakers</h1>
+      <p>These low-profile sneakers are your perfect casual wear companion. Featuring a 
+        durable rubber outer sole, they’ll withstand everything the weather can offer.
+      </p>
+      <h2>$125.00</h2>
+      <h3>50%</h3>
+      <h4>$250.00</h4>
+      <button class="fir">0</button>
+      <img class="one" src="icon-minus.svg" alt="">
+      <img class="two" src="icon-plus.svg" alt="">
+      <button class="sec">Add To Cart</button>
+      <img class="three" src="icon-cart.svg" alt="">
+    </div>
+    <div class="group_imges">
+      <img id="one" src="image-product-1.jpg" alt="">
+      <img id="two" src="image-product-2.jpg" alt="">
+      <img id="three" src="image-product-3.jpg" alt="">
+      <img id="four" src="image-product-4.jpg" alt="" class="">
+    </div>
+    <script>
+      let two = document.getElementById("two")
+      let one = document.getElementById("one")
+      let three = document.getElementById("three")
+      let four = document.getElementById("four")
+      let img = document.getElementById("img")
+      
+      one.onclick = function(){
+        img.style.display = "none"
+        onee.style.display = "inline"
+        onee.style.borderRadius = "30px"
+        onee.style.width = "40%"
+        one.style.opacity =  "0.4"
+        threeee.style.display =  "none"
+        twoo.style.display =  "none"
+        fourr.style.display =  "none"
+        two.style.opacity =  "1"
+        four.style.opacity =  "1"
+        three.style.opacity =  "1"
+      }
+      two.onclick = function(){
+        img.style.display = "none"
+        twoo.style.display = "inline"
+        twoo.style.borderRadius = "30px"
+        twoo.style.width = "40%"
+        two.style.opacity =  "0.4"
+        threeee.style.display =  "none"
+        onee.style.display =  "none"
+        fourr.style.display =  "none"
+        four.style.opacity =  "1"
+        one.style.opacity =  "1"
+        three.style.opacity =  "1"
+      }
+      three.onclick = function(){
+        img.style.display = "none"
+        threeee.style.display = "inline"
+        threeee.style.borderRadius = "30px"
+        threeee.style.width = "40%"
+        three.style.opacity =  "0.4"
+        twoo.style.display =  "none"
+        onee.style.display =  "none"
+        two.style.opacity =  "1"
+        one.style.opacity =  "1"
+        four.style.opacity =  "1"
+        fourr.style.display =  "none"
+      }
+      four.onclick = function(){
+        img.style.display = "none"
+        fourr.style.display = "inline"
+        fourr.style.borderRadius = "30px"
+        fourr.style.width = "40%"
+        four.style.opacity =  "0.4"
+        twoo.style.display =  "none"
+        threeee.style.display =  "none"
+        onee.style.display =  "none"
+        three.style.opacity =  "1"
+        one.style.opacity =  "1"
+        two.style.opacity =  "1"
+      }
+    </script>
+  </body>
+</html>
